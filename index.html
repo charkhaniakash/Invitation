@@ -4,37 +4,260 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chi. Sagar &amp; Chi. Kum. Sou. Ka. Shriraksha — 4D Royal Wedding Invitation</title>
-  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            maroonDeep: '#190307',
-            maroonRoyal: '#2c070e',
-            maroonVelvet: '#430b16',
-            goldAntique: '#d4af37',
-            goldBright: '#f7df8b',
-            goldBronze: '#8f6b1c',
-            ivoryWarm: '#fbf3e4',
-            champagneSoft: '#f2dec0',
-            crimsonRoyal: '#7c1123'
-          },
-          fontFamily: {
-            display: ['"Cinzel Decorative"', 'Georgia', 'serif'],
-            royal: ['"Cormorant Garamond"', 'Georgia', 'serif'],
-            script: ['"Great Vibes"', 'cursive'],
-            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif']
-          }
-        }
-      }
-    };
-  </script>
   <style>
+    /* Static utility CSS (replaces the Tailwind CDN runtime) */
+    *,::before,::after{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}
+    html{line-height:1.5;-webkit-text-size-adjust:100%}
+    h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}
+    blockquote,h1,h2,h3,h4,h5,h6,p{margin:0}
+    a{color:inherit;text-decoration:inherit}
+    button{font-family:inherit;font-size:100%;line-height:inherit;color:inherit;margin:0;padding:0;background-color:transparent;background-image:none;cursor:pointer}
+    img,svg,canvas{display:block;vertical-align:middle}
+    img{max-width:100%;height:auto}
+    [hidden]{display:none}
+    @keyframes pulse{50%{opacity:.5}}
+.bg-gradient-to-b{background-image:linear-gradient(to bottom,var(--tw-gs))}
+.bg-gradient-to-br{background-image:linear-gradient(to bottom right,var(--tw-gs))}
+.bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gs))}
+.from-crimsonRoyal\/25{--tw-from:rgba(124,17,35,0.25);--tw-gs:var(--tw-from),var(--tw-to,rgba(124,17,35,0))}
+.from-goldBronze{--tw-from:#8f6b1c;--tw-gs:var(--tw-from),var(--tw-to,rgba(143,107,28,0))}
+.from-maroonVelvet\/80{--tw-from:rgba(67,11,22,0.8);--tw-gs:var(--tw-from),var(--tw-to,rgba(67,11,22,0))}
+.from-maroonVelvet\/90{--tw-from:rgba(67,11,22,0.9);--tw-gs:var(--tw-from),var(--tw-to,rgba(67,11,22,0))}
+.via-goldBright{--tw-gs:var(--tw-from),#f7df8b,var(--tw-to,transparent)}
+.via-maroonDeep\/95{--tw-gs:var(--tw-from),rgba(25,3,7,0.95),var(--tw-to,transparent)}
+.to-goldAntique{--tw-to:#d4af37}
+.to-maroonDeep\/70{--tw-to:rgba(25,3,7,0.7)}
+.to-maroonDeep\/90{--tw-to:rgba(25,3,7,0.9)}
+.to-maroonRoyal\/90{--tw-to:rgba(44,7,14,0.9)}
+.-translate-x-1\/2{transform:translateX(-50%)}
+.absolute{position:absolute}
+.animate-pulse{animation:pulse 2s cubic-bezier(.4,0,.6,1) infinite}
+.bg-amber-400\/15{background-color:rgba(251,191,36,0.15)}
+.bg-goldAntique\/35{background-color:rgba(212,175,55,0.35)}
+.bg-goldAntique\/50{background-color:rgba(212,175,55,0.5)}
+.bg-goldBright{background-color:#f7df8b}
+.bg-goldBright\/80{background-color:rgba(247,223,139,0.8)}
+.bg-maroonDeep{background-color:#190307}
+.bg-maroonDeep\/45{background-color:rgba(25,3,7,0.45)}
+.bg-maroonDeep\/55{background-color:rgba(25,3,7,0.55)}
+.bg-maroonDeep\/60{background-color:rgba(25,3,7,0.6)}
+.bg-maroonDeep\/65{background-color:rgba(25,3,7,0.65)}
+.bg-maroonVelvet{background-color:#430b16}
+.blur-2xl{filter:blur(40px)}
+.border{border-width:1px}
+.border-2{border-width:2px}
+.border-goldAntique\/25{border-color:rgba(212,175,55,0.25)}
+.border-goldAntique\/30{border-color:rgba(212,175,55,0.3)}
+.border-goldAntique\/35{border-color:rgba(212,175,55,0.35)}
+.border-goldAntique\/40{border-color:rgba(212,175,55,0.4)}
+.border-goldAntique\/45{border-color:rgba(212,175,55,0.45)}
+.border-goldAntique\/55{border-color:rgba(212,175,55,0.55)}
+.border-goldAntique\/60{border-color:rgba(212,175,55,0.6)}
+.border-goldAntique\/70{border-color:rgba(212,175,55,0.7)}
+.border-t{border-top-width:1px}
+.bottom-3{bottom:0.75rem}
+.cursor-pointer{cursor:pointer}
+.divide-goldAntique\/35 > :not([hidden]) ~ :not([hidden]){border-color:rgba(212,175,55,0.35)}
+.divide-y > :not([hidden]) ~ :not([hidden]){border-top-width:1px;border-bottom-width:0}
+.drop-shadow-\[0_0_22px_rgba\(247\,223\,139\,0\.55\)\]{filter:drop-shadow(0 0 22px rgba(247,223,139,0.55))}
+.fixed{position:fixed}
+.flex{display:flex}
+.flex-col{flex-direction:column}
+.flex-wrap{flex-wrap:wrap}
+.font-black{font-weight:900}
+.font-bold{font-weight:700}
+.font-display{font-family:"Cinzel Decorative",Georgia,serif}
+.font-medium{font-weight:500}
+.font-royal{font-family:"Cormorant Garamond",Georgia,serif}
+.font-sans{font-family:"Plus Jakarta Sans",system-ui,sans-serif}
+.font-script{font-family:"Great Vibes",cursive}
+.font-semibold{font-weight:600}
+.gap-1{gap:0.25rem}
+.gap-1\.5{gap:0.375rem}
+.gap-2{gap:0.5rem}
+.gap-3{gap:0.75rem}
+.gap-4{gap:1rem}
+.gap-6{gap:1.5rem}
+.grid{display:grid}
+.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}
+.h-16{height:4rem}
+.h-2{height:0.5rem}
+.h-2\.5{height:0.625rem}
+.h-28{height:7rem}
+.h-36{height:9rem}
+.h-4{height:1rem}
+.h-44{height:11rem}
+.h-\[3px\]{height:3px}
+.h-full{height:100%}
+.h-px{height:1px}
+.hidden{display:none}
+.inline-block{display:inline-block}
+.inset-2{inset:0.5rem}
+.italic{font-style:italic}
+.items-center{align-items:center}
+.items-stretch{align-items:stretch}
+.justify-between{justify-content:space-between}
+.justify-center{justify-content:center}
+.leading-relaxed{line-height:1.625}
+.leading-snug{line-height:1.375}
+.left-0{left:0}
+.left-1\/2{left:50.0%}
+.max-w-2xl{max-width:42rem}
+.max-w-3xl{max-width:48rem}
+.max-w-6xl{max-width:72rem}
+.max-w-xl{max-width:36rem}
+.mb-1{margin-bottom:0.25rem}
+.mb-2{margin-bottom:0.5rem}
+.mb-3{margin-bottom:0.75rem}
+.mb-4{margin-bottom:1rem}
+.mb-5{margin-bottom:1.25rem}
+.mb-6{margin-bottom:1.5rem}
+.mb-7{margin-bottom:1.75rem}
+.mb-8{margin-bottom:2rem}
+.ml-1{margin-left:0.25rem}
+.mt-0\.5{margin-top:0.125rem}
+.mt-1{margin-top:0.25rem}
+.mt-1\.5{margin-top:0.375rem}
+.mt-2{margin-top:0.5rem}
+.mt-3{margin-top:0.75rem}
+.mt-4{margin-top:1rem}
+.mt-6{margin-top:1.5rem}
+.mt-7{margin-top:1.75rem}
+.mt-8{margin-top:2rem}
+.mx-auto{margin-left:auto;margin-right:auto}
+.my-2\.5{margin-top:0.625rem;margin-bottom:0.625rem}
+.my-5{margin-top:1.25rem;margin-bottom:1.25rem}
+.object-cover{object-fit:cover}
+.opacity-0{opacity:0}
+.opacity-100{opacity:1}
+.overflow-hidden{overflow:hidden}
+.overflow-x-auto{overflow-x:auto}
+.p-2{padding:0.5rem}
+.p-5{padding:1.25rem}
+.p-6{padding:1.5rem}
+.pointer-events-auto{pointer-events:auto}
+.pointer-events-none{pointer-events:none}
+.pt-2{padding-top:0.5rem}
+.pt-3{padding-top:0.75rem}
+.pt-6{padding-top:1.5rem}
+.px-1{padding-left:0.25rem;padding-right:0.25rem}
+.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}
+.px-3{padding-left:0.75rem;padding-right:0.75rem}
+.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}
+.px-4{padding-left:1rem;padding-right:1rem}
+.px-5{padding-left:1.25rem;padding-right:1.25rem}
+.px-6{padding-left:1.5rem;padding-right:1.5rem}
+.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}
+.py-1{padding-top:0.25rem;padding-bottom:0.25rem}
+.py-2{padding-top:0.5rem;padding-bottom:0.5rem}
+.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}
+.py-3{padding-top:0.75rem;padding-bottom:0.75rem}
+.relative{position:relative}
+.right-0{right:0}
+.rounded-2xl{border-radius:1rem}
+.rounded-full{border-radius:9999px}
+.rounded-lg{border-radius:.5rem}
+.rounded-xl{border-radius:.75rem}
+.select-none{user-select:none;-webkit-user-select:none}
+.shadow-\[0_0_10px_rgba\(247\,223\,139\,0\.8\)\]{box-shadow:0 0 10px rgba(247,223,139,0.8)}
+.shadow-\[0_0_25px_rgba\(212\,175\,55\,0\.45\)\]{box-shadow:0 0 25px rgba(212,175,55,0.45)}
+.shadow-lg{box-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1)}
+.space-y-3 > :not([hidden]) ~ :not([hidden]){margin-top:.75rem}
+.text-2xl{font-size:1.5rem;line-height:2rem}
+.text-3xl{font-size:1.875rem;line-height:2.25rem}
+.text-\[11px\]{font-size:11px}
+.text-base{font-size:1rem;line-height:1.5rem}
+.text-center{text-align:center}
+.text-champagneSoft{color:#f2dec0}
+.text-champagneSoft\/70{color:rgba(242,222,192,0.7)}
+.text-champagneSoft\/75{color:rgba(242,222,192,0.75)}
+.text-champagneSoft\/80{color:rgba(242,222,192,0.8)}
+.text-champagneSoft\/85{color:rgba(242,222,192,0.85)}
+.text-champagneSoft\/90{color:rgba(242,222,192,0.9)}
+.text-goldAntique{color:#d4af37}
+.text-goldBright{color:#f7df8b}
+.text-ivoryWarm{color:#fbf3e4}
+.text-left{text-align:left}
+.text-lg{font-size:1.125rem;line-height:1.75rem}
+.text-maroonDeep{color:#190307}
+.text-maroonDeep\/80{color:rgba(25,3,7,0.8)}
+.text-sm{font-size:.875rem;line-height:1.25rem}
+.text-xl{font-size:1.25rem;line-height:1.75rem}
+.text-xs{font-size:.75rem;line-height:1rem}
+.top-0{top:0}
+.top-16{top:4rem}
+.tracking-\[0\.18em\]{letter-spacing:0.18em}
+.tracking-\[0\.24em\]{letter-spacing:0.24em}
+.tracking-\[0\.26em\]{letter-spacing:0.26em}
+.tracking-\[0\.28em\]{letter-spacing:0.28em}
+.tracking-\[0\.2em\]{letter-spacing:0.2em}
+.tracking-\[0\.3em\]{letter-spacing:0.3em}
+.tracking-wide{letter-spacing:.025em}
+.tracking-wider{letter-spacing:.05em}
+.tracking-widest{letter-spacing:.1em}
+.transition{transition-property:color,background-color,border-color,opacity,box-shadow,transform,filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}
+.transition-all{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}
+.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}
+.uppercase{text-transform:uppercase}
+.w-12{width:3rem}
+.w-2{width:0.5rem}
+.w-2\.5{width:0.625rem}
+.w-28{width:7rem}
+.w-36{width:9rem}
+.w-4{width:1rem}
+.w-44{width:11rem}
+.w-7{width:1.75rem}
+.w-full{width:100%}
+.z-10{z-index:10}
+.z-30{z-index:30}
+.z-40{z-index:40}
+.duration-300{transition-duration:.3s}
+.hover\:bg-goldAntique\/15:hover{background-color:rgba(212,175,55,0.15)}
+.hover\:bg-goldAntique\/70:hover{background-color:rgba(212,175,55,0.7)}
+.hover\:border-goldBright:hover{border-color:#f7df8b}
+.hover\:scale-105:hover{transform:scale(1.05)}
+.hover\:text-goldBright:hover{color:#f7df8b}
+.selection\:bg-goldAntique ::selection,.selection\:bg-goldAntique::selection{background-color:#d4af37}
+.selection\:text-maroonDeep ::selection,.selection\:text-maroonDeep::selection{color:#190307}
+@media (min-width:640px){
+.sm\:gap-2\.5{gap:0.625rem}
+.sm\:gap-7{gap:1.75rem}
+.sm\:gap-8{gap:2rem}
+.sm\:h-36{height:9rem}
+.sm\:h-44{height:11rem}
+.sm\:h-52{height:13rem}
+.sm\:inline{display:inline}
+.sm\:p-10{padding:2.5rem}
+.sm\:p-8{padding:2rem}
+.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}
+.sm\:py-3{padding-top:0.75rem;padding-bottom:0.75rem}
+.sm\:text-2xl{font-size:1.5rem;line-height:2rem}
+.sm\:text-3xl{font-size:1.875rem;line-height:2.25rem}
+.sm\:text-4xl{font-size:2.25rem;line-height:2.5rem}
+.sm\:text-5xl{font-size:3rem;line-height:1}
+.sm\:text-lg{font-size:1.125rem;line-height:1.75rem}
+.sm\:text-sm{font-size:.875rem;line-height:1.25rem}
+.sm\:text-xl{font-size:1.25rem;line-height:1.75rem}
+.sm\:w-36{width:9rem}
+.sm\:w-44{width:11rem}
+.sm\:w-52{width:13rem}
+}
+@media (min-width:768px){
+.md\:divide-x > :not([hidden]) ~ :not([hidden]){border-left-width:1px;border-right-width:0}
+.md\:divide-y-0 > :not([hidden]) ~ :not([hidden]){border-top-width:0;border-bottom-width:0}
+.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.md\:p-12{padding:3rem}
+.md\:pl-6{padding-left:1.5rem}
+.md\:pr-4{padding-right:1rem}
+.md\:pt-0{padding-top:0}
+.md\:text-4xl{font-size:2.25rem;line-height:2.5rem}
+.md\:text-5xl{font-size:3rem;line-height:1}
+.md\:text-\[1\.65rem\]{font-size:1.65rem}
+}
     :root {
       --gold: #d4af37;
       --gold-light: #f9e59e;
@@ -307,7 +530,44 @@
     .scene-section.is-active .scene-card > :nth-child(7):not(.filigree-corner):not(.card-3d-unfold){transition-delay:.25s}
     .scene-section.is-active .scene-card > :nth-child(n+8):not(.filigree-corner):not(.card-3d-unfold){transition-delay:.35s}
     .photo-groom{object-position:50% 0% !important;transform:scale(1.3) translateX(15%) !important}
+    .scene-section{min-height:100vh;min-height:100svh;padding:2rem 1rem 5.5rem}
+    @media(min-width:768px){.scene-section{padding:2.5rem 2.5rem 5.5rem}}
+    @media(max-width:640px){
+      .scene-card{padding:1.25rem 1rem !important;border-radius:1.1rem}
+      #scene-1 .space-y-3 > div{font-size:1.05rem !important;letter-spacing:.03em !important}
+      #scene-3 .grid{grid-template-columns:1fr 1fr !important;gap:.6rem !important}
+      #scene-3 .grid > div{padding:.8rem .5rem !important}
+      #scene-3 .royal-portrait-ring{width:6.5rem !important;height:6.5rem !important}
+      #scene-3 h3{font-size:1rem !important}
+      #scene-3 blockquote{font-size:1.05rem !important;margin-bottom:1rem !important}
+      #scene-8 h2{font-size:1.25rem !important}
+    }
     .photo-bride{object-position:50% 8% !important;transform:scale(1.15) translateX(-8%) !important}
+
+    /* ===== Royal enhancement layer ===== */
+    @property --ang{syntax:'<angle>';initial-value:0deg;inherits:false}
+    @keyframes spinAng{to{--ang:360deg}}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+    @keyframes sheen{to{transform:translateX(130%)}}
+    @keyframes ringPulse{0%,100%{box-shadow:0 12px 30px rgba(0,0,0,.65),0 0 22px rgba(212,175,55,.35)}50%{box-shadow:0 12px 30px rgba(0,0,0,.65),0 0 46px rgba(247,223,139,.75)}}
+    .scene-card::before{content:'';position:absolute;inset:0;border-radius:inherit;padding:2px;pointer-events:none;
+      background:conic-gradient(from var(--ang),transparent 0%,#f7df8b 9%,transparent 24%,transparent 50%,#d4af37 59%,#fff2c2 63%,transparent 76%);
+      -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0);
+      animation:spinAng 8s linear infinite}
+    .scene-card::after{content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;mix-blend-mode:screen;
+      background:radial-gradient(520px circle at var(--mx,50%) var(--my,-30%),rgba(255,236,170,.17),transparent 55%)}
+    .scene-card{background-image:radial-gradient(circle at 50% 0%,rgba(247,223,139,.10),transparent 55%),linear-gradient(145deg,rgba(38,6,13,.94) 0%,rgba(20,3,7,.96) 60%,rgba(46,8,17,.93) 100%)}
+    .gold-gradient-text{filter:drop-shadow(0 2px 12px rgba(212,175,55,.4))}
+    .royal-portrait-ring{animation:ringPulse 4s ease-in-out infinite}
+    .royal-portrait-ring::after{animation:spin 40s linear infinite}
+    #scene-1 .scene-card>div.mx-auto{animation:floaty 6s ease-in-out infinite}
+    #scene-1 .scene-card>div.mx-auto::before{content:'';position:absolute;inset:-38%;border-radius:50%;pointer-events:none;
+      background:repeating-conic-gradient(rgba(247,223,139,.42) 0 2.5deg,transparent 2.5deg 11.25deg);
+      -webkit-mask:radial-gradient(circle,transparent 36%,#000 40%,transparent 68%);mask:radial-gradient(circle,transparent 36%,#000 40%,transparent 68%);animation:spin 50s linear infinite}
+    button[class*="bg-gradient-to-r"]{position:relative;overflow:hidden}
+    button[class*="bg-gradient-to-r"]::after{content:'';position:absolute;inset:0;background:linear-gradient(110deg,transparent 35%,rgba(255,255,255,.6) 50%,transparent 65%);transform:translateX(-130%);animation:sheen 3.4s ease-in-out infinite}
+    @media (prefers-reduced-motion:reduce){.scene-card::before,.royal-portrait-ring,.royal-portrait-ring::after,#scene-1 .scene-card>div.mx-auto,#scene-1 .scene-card>div.mx-auto::before,button[class*="bg-gradient-to-r"]::after{animation:none}}
   </style>
 </head>
 <body class="bg-maroonDeep text-ivoryWarm selection:bg-goldAntique selection:text-maroonDeep">
@@ -329,7 +589,7 @@
   </div>
 
   <!-- Top Navigation & Audio/Auto-Play Controls -->
-  <header class="fixed top-0 left-0 right-0 z-30 px-3 py-2.5 sm:px-6 sm:py-3 pointer-events-none">
+  <header class="hidden fixed top-0 left-0 right-0 z-30 px-3 py-2.5 sm:px-6 sm:py-3 pointer-events-none">
     <div class="max-w-6xl mx-auto flex items-center justify-between gap-2">
       <button
         type="button"
@@ -1043,7 +1303,13 @@
     const SCENE_DWELL_MS = [2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000];
     const SCROLL_MS = 600;
     let scrollAnim = null, readTimer = null;
-    ['wheel', 'touchmove'].forEach((ev) => window.addEventListener(ev, () => { cancelAnimationFrame(scrollAnim); if (isAutoPlaying) stopAutoPlay(); }, { passive: true }));
+    let resumeTimer = null;
+    ['wheel', 'touchmove'].forEach((ev) => window.addEventListener(ev, () => {
+      cancelAnimationFrame(scrollAnim);
+      if (!isAutoPlaying) return;
+      clearTimeout(autoPlayTimer); clearTimeout(readTimer); stopProgress(); clearTimeout(resumeTimer);
+      resumeTimer = setTimeout(() => { if (isAutoPlaying) scheduleAutoAdvance(); }, 5000);
+    }, { passive: true }));
 
     function slowScrollY(target, ms) {
       const start = window.scrollY, dist = target - start, t0 = performance.now();
@@ -1363,7 +1629,6 @@
         mutedIcon.classList.add('hidden');
         unmutedIcon.classList.remove('hidden');
         label.textContent = '8D Sound On';
-        showToast('8D sound on — wear headphones for the full effect');
         ringTempleBell(0.5);
       } else {
         masterGain.gain.cancelScheduledValues(audioCtx.currentTime);
@@ -1487,6 +1752,15 @@
         bridePhotoMat = photoMat;
       }
 
+      // Divine halo + orbiting pearl crown
+      const hl = glowSprite(0xffd36b, 5.6, 0.5); hl.position.z = -0.15; group.add(hl);
+      const crown = new THREE.Group();
+      const pearl = new THREE.MeshStandardMaterial({ color: 0xfff6dc, emissive: 0xffe9a8, emissiveIntensity: 0.55, roughness: 0.2, metalness: 0.3 });
+      for (let i = 0; i < 36; i++) {
+        const a = (i / 36) * Math.PI * 2, p = new THREE.Mesh(new THREE.SphereGeometry(i % 3 === 0 ? 0.075 : 0.045, 10, 8), i % 3 === 0 ? brightGoldMat : pearl);
+        p.position.set(Math.cos(a) * 1.78, Math.sin(a) * 1.78, 0.02); crown.add(p);
+      }
+      group.add(crown); frameSpinners.push(crown);
       sync3DPortraitTexture(role, initialSrc);
       return group;
     }
@@ -1730,6 +2004,7 @@
         opacity: 0.9
       });
 
+      petalMat.map = makePetalTexture(); petalMat.size = 0.5; petalMat.depthWrite = false; petalMat.alphaTest = 0.02;
       petalsMesh = new THREE.Points(petalGeo, petalMat);
       scene.add(petalsMesh);
 
@@ -1749,6 +2024,7 @@
         transparent: true,
         opacity: 0.72
       });
+      sparkMat.map = makeGlowTexture(); sparkMat.size = 0.32; sparkMat.blending = THREE.AdditiveBlending; sparkMat.depthWrite = false;
       particlesMesh = new THREE.Points(sparkGeo, sparkMat);
       scene.add(particlesMesh);
 
@@ -1760,6 +2036,7 @@
       fxGeo.setAttribute('color', new THREE.BufferAttribute(burstCol, 3));
       fxBursts = new THREE.Points(fxGeo, new THREE.PointsMaterial({ size: 0.26, vertexColors: true, transparent: true, blending: THREE.AdditiveBlending, depthWrite: false }));
       fxBursts.frustumCulled = false;
+      fxBursts.material.map = makeGlowTexture(); fxBursts.material.size = 0.55;
       scene.add(fxBursts);
 
       // Gyroscope of glowing golden mandala rings
@@ -1771,6 +2048,8 @@
         gyroGroup.add(m);
       });
       scene.add(gyroGroup);
+
+      buildRoyalExtras();
 
       // Mouse / Touch Camera Parallax & Orbit Interaction
       window.addEventListener('mousemove', (e) => {
@@ -1963,13 +2242,97 @@
       camera.position.x += (Math.random() - 0.5) * boomPulse * 0.12;
       camera.position.y += (Math.random() - 0.5) * boomPulse * 0.08;
 
+      if (typeof extraFx === 'function' && FX.sky) extraFx(elapsed);
       renderer.render(scene, camera);
     }
+
+    // ===== Royal enhancement layer (3D) =====
+    let _glowTex=null,_petalTex=null,FX={},frameSpinners=[];
+    function makeGlowTexture(){
+      if(_glowTex)return _glowTex;
+      const c=document.createElement('canvas');c.width=c.height=128;const g=c.getContext('2d');
+      const r=g.createRadialGradient(64,64,0,64,64,64);
+      r.addColorStop(0,'rgba(255,255,255,1)');r.addColorStop(.25,'rgba(255,255,255,.55)');r.addColorStop(1,'rgba(255,255,255,0)');
+      g.fillStyle=r;g.fillRect(0,0,128,128);return(_glowTex=new THREE.CanvasTexture(c));
+    }
+    function makePetalTexture(){
+      if(_petalTex)return _petalTex;
+      const c=document.createElement('canvas');c.width=c.height=64;const g=c.getContext('2d');
+      const r=g.createRadialGradient(32,34,2,32,34,30);r.addColorStop(0,'#fff');r.addColorStop(1,'rgba(255,255,255,.65)');
+      g.fillStyle=r;g.beginPath();g.moveTo(32,3);g.bezierCurveTo(60,22,52,54,32,61);g.bezierCurveTo(12,54,4,22,32,3);g.fill();
+      return(_petalTex=new THREE.CanvasTexture(c));
+    }
+    function glowSprite(color,scale,opacity){
+      const sp=new THREE.Sprite(new THREE.SpriteMaterial({map:makeGlowTexture(),color,transparent:true,opacity,blending:THREE.AdditiveBlending,depthWrite:false,fog:false}));
+      sp.scale.set(scale,scale,1);return sp;
+    }
+    function makeMandalaTexture(){
+      const c=document.createElement('canvas');c.width=c.height=1024;const g=c.getContext('2d');
+      g.translate(512,512);g.strokeStyle='rgba(247,223,139,.95)';g.shadowColor='rgba(255,200,80,.9)';g.shadowBlur=8;
+      const ring=(r,w)=>{g.lineWidth=w;g.beginPath();g.arc(0,0,r,0,6.2832);g.stroke();};
+      const petals=(n,r0,len,wid,w)=>{g.lineWidth=w;for(let i=0;i<n;i++){g.save();g.rotate(i*6.2832/n);g.beginPath();g.moveTo(0,-r0);g.quadraticCurveTo(wid,-r0-len/2,0,-r0-len);g.quadraticCurveTo(-wid,-r0-len/2,0,-r0);g.stroke();g.restore();}};
+      [492,470,420,300,205,110,40].forEach((r,i)=>ring(r,i%2?2:3.5));
+      petals(32,420,50,15,2);petals(24,305,100,34,2.5);petals(16,208,88,38,2.5);petals(12,112,70,32,3);petals(8,40,60,24,3);
+      for(let i=0;i<96;i++){g.save();g.rotate(i*6.2832/96);g.beginPath();g.arc(0,-481,3.2,0,6.2832);g.fillStyle='rgba(255,230,150,.95)';g.fill();g.restore();}
+      return new THREE.CanvasTexture(c);
+    }
+    function buildRoyalExtras(){
+      // Starry twilight sky dome
+      const sky=new THREE.Mesh(new THREE.SphereGeometry(95,32,24),new THREE.ShaderMaterial({side:THREE.BackSide,depthWrite:false,uniforms:{t:{value:0}},
+        vertexShader:'varying vec3 vP;void main(){vP=normalize(position);gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);}',
+        fragmentShader:'varying vec3 vP;uniform float t;float h(vec3 p){return fract(sin(dot(p,vec3(12.9898,78.233,37.719)))*43758.5453);}void main(){float y=vP.y;vec3 c=mix(vec3(.26,.04,.09),vec3(.03,.005,.02),smoothstep(0.,.8,y));c=mix(c,vec3(.9,.5,.15),pow(max(0.,1.-abs(y+.04)*3.5),3.)*.55);float s=h(floor(vP*230.));float st=step(.9965,s)*(.5+.5*sin(t*2.+s*60.));c+=vec3(1.,.9,.6)*st*smoothstep(0.,.25,y);gl_FragColor=vec4(c,1.);}'}));
+      sky.renderOrder=-10;scene.add(sky);FX.sky=sky;
+      // Glowing golden mandala laid on the palace floor
+      const man=new THREE.Mesh(new THREE.PlaneGeometry(25,25),new THREE.MeshBasicMaterial({map:makeMandalaTexture(),transparent:true,opacity:.6,blending:THREE.AdditiveBlending,depthWrite:false}));
+      man.rotation.x=-Math.PI/2;man.position.y=-2.14;scene.add(man);FX.man=man;
+      // Sunrise halo behind the palace doors
+      const halo=glowSprite(0xffa733,34,.2);halo.position.set(0,4,-13);scene.add(halo);FX.halo=halo;
+      // Heavenly light shafts
+      FX.shafts=[];
+      [-9,-4.5,0,4.5,9].forEach((x,i)=>{
+        const m=new THREE.Mesh(new THREE.CylinderGeometry(.3,3.2,19,24,1,true),new THREE.MeshBasicMaterial({color:i%2?0xffe08a:0xffb347,transparent:true,opacity:.05,blending:THREE.AdditiveBlending,depthWrite:false,side:THREE.DoubleSide,fog:false}));
+        m.position.set(x,7,-7-Math.abs(x)*.25);m.rotation.z=x*.025;m.userData.b=x*.025;m.userData.p=i;scene.add(m);FX.shafts.push(m);
+      });
+      // Floating diyas orbiting the mandap
+      FX.diyas=[];
+      for(let i=0;i<44;i++){
+        const d=glowSprite(i%3?0xffb02e:0xff7a2e,.75+Math.random()*.5,.9);
+        d.userData={a:Math.random()*6.283,r:5+Math.random()*5.5,y:-1.7+Math.random()*4.2,sp:.04+Math.random()*.07,ph:Math.random()*6.283};
+        scene.add(d);FX.diyas.push(d);
+      }
+      // Marigold & rose swags on the mandap + sacred fire glow
+      const sg=new THREE.SphereGeometry(.15,10,8);
+      const mats=[0xffa31a,0xe11d48,0xffd23f].map(c=>new THREE.MeshStandardMaterial({color:c,emissive:c,emissiveIntensity:.28,roughness:.45}));
+      [.25,.75,1.25,1.75].forEach(a1=>{
+        for(let j=0;j<=14;j++){
+          const t=j/14,a=(a1+.5*t)*Math.PI,sag=Math.sin(t*Math.PI)*.75;
+          const f=new THREE.Mesh(sg,mats[j%3]);f.position.set(Math.cos(a)*3.8,5.45-sag,Math.sin(a)*3.8);mandapGroup.add(f);
+          if(j%3===1)for(let k=1;k<=3;k++){const tl=new THREE.Mesh(sg,mats[(j+k)%3]);tl.scale.setScalar(.75-k*.12);tl.position.set(f.position.x,f.position.y-k*.28,f.position.z);mandapGroup.add(tl);}
+        }
+      });
+      FX.fire=glowSprite(0xffa31a,4.2,.75);FX.fire.position.y=1.5;mandapGroup.add(FX.fire);
+    }
+    function extraFx(t){
+      FX.sky.material.uniforms.t.value=t;
+      FX.man.rotation.z=t*.05;FX.man.material.opacity=.5+Math.sin(t*1.2)*.12;
+      FX.halo.material.opacity=.18+Math.sin(t*.7)*.04;
+      FX.shafts.forEach(m=>{m.rotation.z=m.userData.b+Math.sin(t*.35+m.userData.p)*.05;m.material.opacity=.045+Math.sin(t*.8+m.userData.p*1.7)*.02;});
+      FX.diyas.forEach(d=>{const u=d.userData,a=u.a+t*u.sp;d.position.set(Math.cos(a)*u.r,u.y+Math.sin(t*1.3+u.ph)*.28,Math.sin(a)*u.r-2);d.material.opacity=.65+.3*Math.sin(t*7+u.ph*5);});
+      const f=1+Math.sin(t*6)*.1+Math.sin(t*9.3)*.06;FX.fire.scale.set(4.2*f,4.2*f,1);
+      frameSpinners.forEach((o,i)=>o.rotation.z+=(i%2?-1:1)*.006);
+    }
+    window.addEventListener('pointerdown',e=>{if(typeof spawnBurst==='function'&&fxBursts)spawnBurst((e.clientX/innerWidth-.5)*16,7-(e.clientY/innerHeight)*6,-3,Math.floor(Math.random()*4));});
+    document.querySelectorAll('.scene-card').forEach(c=>c.addEventListener('pointermove',e=>{const r=c.getBoundingClientRect();c.style.setProperty('--mx',(e.clientX-r.left)+'px');c.style.setProperty('--my',(e.clientY-r.top)+'px');}));
 
     window.addEventListener('load', () => {
       initThreeScene();
       handleScrollProgress();
-      setTimeout(autoStartFilm, 1000);
+      setTimeout(() => { autoStartFilm(); if (!audioEnabled) toggleAudio(); }, 1000);
+      const unlockAudio = () => {
+        if (!audioEnabled) toggleAudio();
+        else if (audioCtx && audioCtx.state === 'suspended') audioCtx.resume();
+      };
+      ['pointerdown', 'touchstart', 'touchend', 'click', 'keydown', 'wheel'].forEach((ev) => window.addEventListener(ev, unlockAudio, { passive: true }));
     });
   </script>
 </body>

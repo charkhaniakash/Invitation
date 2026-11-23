@@ -533,14 +533,30 @@
     .scene-section{min-height:100vh;min-height:100svh;padding:2rem 1rem 5.5rem}
     @media(min-width:768px){.scene-section{padding:2.5rem 2.5rem 5.5rem}}
     @media(max-width:640px){
-      .scene-card{padding:1.25rem 1rem !important;border-radius:1.1rem}
-      #scene-1 .space-y-3 > div{font-size:1.05rem !important;letter-spacing:.03em !important}
-      #scene-3 .grid{grid-template-columns:1fr 1fr !important;gap:.6rem !important}
-      #scene-3 .grid > div{padding:.8rem .5rem !important}
-      #scene-3 .royal-portrait-ring{width:6.5rem !important;height:6.5rem !important}
-      #scene-3 h3{font-size:1rem !important}
-      #scene-3 blockquote{font-size:1.05rem !important;margin-bottom:1rem !important}
-      #scene-8 h2{font-size:1.25rem !important}
+      /* Bigger, wider cards on mobile */
+      .scene-section{padding:4.5rem .5rem 6rem !important;align-items:flex-start}
+      .scene-card{padding:1.75rem 1.1rem !important;border-radius:1.25rem;max-width:100% !important}
+      .scene-card > p.uppercase{font-size:.85rem !important;line-height:1.3rem !important}
+      .scene-card [class*="text-[11px]"]{font-size:.85rem !important}
+      .scene-card .rounded-2xl{padding:1.4rem 1rem !important}
+      .scene-card .font-royal.text-lg{font-size:1.3rem !important;line-height:1.8rem !important}
+      .scene-card .font-display.text-lg,.scene-card .font-display.text-xl{font-size:1.5rem !important;line-height:2rem !important}
+      .scene-card .font-display.text-2xl{font-size:1.9rem !important;line-height:2.4rem !important}
+      #scene-1 .mx-auto.w-44{width:14rem !important;height:14rem !important}
+      #scene-1 .space-y-3 > div{font-size:1.5rem !important;letter-spacing:.04em !important;line-height:2rem !important}
+      #scene-1 button{font-size:1rem !important;padding:.9rem 1.4rem !important;width:100%}
+      #scene-3 .grid{grid-template-columns:1fr !important;gap:1.1rem !important}
+      #scene-3 .grid > div{padding:1.5rem 1rem !important}
+      #scene-3 .royal-portrait-ring{width:12rem !important;height:12rem !important}
+      #scene-3 h3{font-size:1.9rem !important;line-height:2.4rem !important}
+      #scene-3 blockquote,.scene-card blockquote{font-size:1.35rem !important;line-height:2rem !important;margin-bottom:1.25rem !important}
+      #scene-5 .card-3d-unfold{padding:1.5rem 1rem !important}
+      #scene-5 .font-display.text-xl{font-size:1.6rem !important;line-height:2.1rem !important}
+      #scene-5 .font-display.text-2xl{font-size:2.2rem !important}
+      #scene-7 a[href^="tel"]{font-size:1.4rem !important;padding:.6rem 1rem !important}
+      #scene-8 .royal-portrait-ring{width:8.5rem !important;height:8.5rem !important}
+      #scene-8 h2{font-size:1.7rem !important;line-height:2.2rem !important}
+      #scene-8 button{font-size:1rem !important;padding:.9rem 1.4rem !important;width:100%}
     }
     .photo-bride{object-position:50% 8% !important;transform:scale(1.15) translateX(-8%) !important}
 
